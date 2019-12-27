@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3080386a05.js" crossorigin="anonymous"></script>
+    <title>Signal - Puzzle</title>
+</head>
+<body>
+
+<nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+    </span>
+    <a href="/index.html" class="logo" style="color:#333;">Puzzle <i class="fas fa-puzzle-piece"></i></a>
+    <ul class="main-nav" id="js-menu">
+        <li>
+            <a href="/index.html" class="nav-links" style="color:#333;">Home</a>
+        </li>
+        <li>
+            <a href="/services.html" class="nav-links" style="color:#333;">Projects</a>
+        </li>
+        <li>
+            <a href="/about.html" class="nav-links" style="color:#333;">About</a>
+        </li>
+        <li>
+            <a href="/contact.html" class="nav-links" style="color:#333;">Contact Us</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="decca-header">
+    <h2>The Signal House</h2>
+    <p>
+        The client asked us to look at revisiting every aspect of the 
+        existing building to propose the most efficient use of space whilst 
+        creating a strong sense of place within each of the floors of the building.
+    </p>
+</div>
+
+<div class="fixed-signal">
+</div>
+
+<!-- Lightbox -->
+
+<!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="/imgs/signal-lightbox-1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="/imgs/signal-lightbox-2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="/imgs/signal-lightbox-3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="/imgs/signal-lightbox-4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="/imgs/signal-lightbox-1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="/imgs/signal-lightbox-2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="/imgs/signal-lightbox-3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="/imgs/signal-lightbox-4.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+</div>
+
+<hr>
+
+<div class="footer">
+    <div class="footer-1">
+        <h5><a href="/index.html">Home</a></h5>
+        <h5><a href="/services.html">Projects</a></h5>
+        <h5><a href="/about.html">About</a></h5>
+        <h5><a href="/contact.html">Contact Us</a></h5>
+    </div>
+
+    <div class="footer-2">
+        <h5>+44(0)20 3263 1370</h5>
+        <h5><a href="#">mail@puzzle.co</a></h5>
+        <h5>Opening Hours:</h5>
+        <h5>Monday - Friday</h5>
+        <h5>09:00 – 18:00</h5>
+    </div>
+
+    <div class="footer-3">
+        <h5>Puzzle London,</h5>
+        <h5>123 Puzzle Road,<h5>
+        <h5> Puzzle Thames,</h5>
+        <h5>London,</h5>
+        <h5>PU5 5ZL</h5>
+    </div>
+</div>
+
+<script src="/lightbox.js"></script>
+<script src="/script.js"></script>
+</body>
+</html>

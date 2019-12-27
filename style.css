@@ -1,0 +1,1528 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    width: 90%;
+    margin: 2% 5%;
+    color: #333;
+}
+
+#what-we-do-darken {
+    font-weight: 700;
+}
+
+/* Navigation */
+
+.navbar {
+    font-size: 22px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(#ffffff 0%, #ffffff   100%);
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: #333;
+    transition: 0.2s;
+}
+
+.nav-links:hover {
+    color: rgb(149, 148, 148);
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 42px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    cursor: pointer;
+    color: #333;
+    font-size: 24px;
+}
+
+.active-1 {
+    display: block;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 50px;
+    color: #333;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.2s;
+}
+
+.footer-1 {
+    margin-bottom: 50px;
+}
+
+.footer-2 {
+    margin-bottom: 50px;
+}
+
+.footer a:hover {
+    color: #777;
+}
+
+/* Landing */
+
+.landing {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(imgs/landing-backg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.landing-text {
+    display: flex;
+    justify-content: center;
+    color: oldlace;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    padding-top: 250px;
+}
+
+/* Section 2 */
+
+.section-2 {
+    width: 85%;
+    margin: 0 7.5%;
+    text-align: center;
+    padding-top: 130px;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #333;
+}
+
+.section-2 button {
+    background: none;
+    height: 50px;
+    width: 150px;
+    border: 2px grey solid;
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    outline: none;
+    cursor: pointer;
+}
+
+.section-2 button:hover {
+    background-color: grey;
+    color: #fff;
+    transition: 0.2s;
+}
+
+/* Slideshow */
+
+.slideshow-container {
+    max-width: 1500px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none; 
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, 
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Portfolio */
+
+.portfolio-sections {
+    margin: 0 2%;
+    display: grid;
+    grid-template-columns: 1fr;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.portfolio-1 h4,
+.portfolio-2 h4,
+.portfolio-3 h4,
+.portfolio-4 h4,
+.portfolio-5 h4,
+.portfolio-6 h4,
+.portfolio-7 h4,
+.portfolio-8 h4 {
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+
+.portfolio h2 {
+    color: #333;
+    width: 90%;
+    margin: 0 5%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+
+.portfolio-1 img,
+.portfolio-2 img,
+.portfolio-3 img,
+.portfolio-4 img,
+.portfolio-5 img,
+.portfolio-6 img,
+.portfolio-7 img,
+.portfolio-8 img {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* Project Links */
+
+.project-links {
+    display: flex;
+    width: 70%;
+    margin: 0 15%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-links-text {
+    display: flex;
+    height: 25px;
+    text-transform: uppercase;
+    color: #777;
+}
+
+.project-links-text a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.2s;
+    font-size: 1.2rem;
+}
+
+.project-links-text a:hover {
+    color: rgb(211, 211, 211);
+}
+
+.project-links-text p {
+    margin: 0 20px;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+#view-our-work {
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.project-links-button button {
+    background: none;
+    height: 50px;
+    width: 150px;
+    border: 2px grey solid;
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.project-links-button button:hover {
+    background-color: grey;
+    color: #fff;
+}
+
+/* Services */
+
+.services-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.services-header h2 {
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin: 50px 0;
+}
+
+.services-header p {
+    color: #333;
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+
+.view-by {
+    display: grid;
+}
+
+.use-container {
+    position: relative;
+}
+
+.use-container img,
+.project-container img {
+    max-width: 100%;
+    width: 676px;
+    height: auto;
+}
+
+#use {
+    -webkit-filter: brightness(100%);
+}
+
+.use-container:hover img {
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+#project {
+    -webkit-filter: brightness(100%);
+}
+
+.project-container:hover img {
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.use-container h2,
+.project-container h2 {
+    position: absolute;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.use-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container h2 {
+    opacity: 0;
+    color: #fff;
+}
+
+.use-container h2 {
+    opacity: 0;
+    color: #fff;
+}
+
+.use-container:hover h2 {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.project-container:hover h2 {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.what-we-do {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.what-we-do h2 {
+    font-size: 2rem;
+    margin-top: 125px;
+    margin-bottom: 50px;
+}
+
+.what-we-do-paragraphs {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    text-align: left;
+}
+
+.what-we-do-paragraphs p {
+    font-size: 1.2rem;
+    margin-bottom: 120px;
+}
+
+.services-testimonial {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(imgs/services-testimonial.jpg);
+    background-position: center center;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.services-testimonial p,
+.services-testimonial h6 {
+    color: #fff;
+    width: 80%;
+    margin: 0 10%;
+    line-height: 30px;
+}
+
+.services-testimonial h6 {
+    margin-top: 50px;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.services-grid {
+    display: grid;
+    width: 95%;
+    margin: 0 2.5%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.services-grid h2 {
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    border-top: 5px solid #333;
+    border-left: 5px solid #333;
+    border-right: 5px solid #333;
+    text-align: center;
+}
+
+#col-2-row-2 {
+    border-top: 5px solid #333;
+    border-left: 5px solid #333;
+}
+
+#design {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    border-top: 5px solid #333;
+    border-left: 5px solid #333;
+}
+
+#col-1-row-3 {
+    border-top: 5px solid #333;
+    border-bottom: 5px solid #333;
+}
+
+#build {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    border-top: 5px solid #333;
+    border-bottom: 5px solid #333;
+    border-right: 5px solid #333;
+    border-left: 5px solid #333;
+}
+
+#beyond {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    border-left: 5px solid #333;
+    border-bottom: 5px solid #333;
+}
+
+#col-2-row-4 {
+    border-left: 5px solid #333;
+}
+
+#services-hr {
+    margin: 150px 5%;
+}
+
+/* About */
+
+.about-1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.about-1 h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.about-1 h6 {
+    font-size: 2rem;
+    width: 80%;
+    margin: 0 10%;
+    text-align: center;
+    font-weight: 300;
+    color: #333;
+}
+
+.about-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 5%;
+    padding-top: 50px;
+}
+
+.about-grid h2 {
+    margin-bottom: 20px;
+}
+
+.about-grid img {
+    max-width: 100%;
+}
+
+.about-grid-2,
+.about-grid-3,
+.about-grid-6,
+.about-grid-7 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.about-1 button {
+    margin-top: 100px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+
+.about-1 i {
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+#grid-hr {
+    width: 50%;
+    margin: 0 25%;
+    color: #333;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.core-values {
+    width: 90%;
+    margin: 0 5%;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.core-values h4 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.core-values p {
+    margin-bottom: 30px;
+    color: #888
+}
+
+/* Cook */
+
+.cook-heading h1 {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    color: #333;
+}
+
+#cook-hr {
+    width: 40%;
+    margin: 0 30%;
+    margin-bottom: 100px;
+}
+
+.signal-kitchen {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.signal-kitchen h4 {
+    font-weight: 400;
+    margin-bottom: 35px;
+    font-size: 1.5rem;
+}
+
+.signal-kitchen-text li:nth-child(1),
+.signal-kitchen-text li:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.signal-kitchen ul {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+    padding-left: 10px;
+    list-style-position: outside;
+    list-style-type: disc;
+}
+
+.signal-kitchen img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.signal-gallery {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.signal-gallery img {
+    width: 100%;
+}
+
+.etch-kitchen {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.etch-kitchen h4 {
+    font-weight: 400;
+    margin-bottom: 35px;
+    font-size: 1.5rem;
+}
+
+.etch-kitchen-text li:nth-child(1),
+.etch-kitchen-text li:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.etch-kitchen ul {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+    padding-left: 10px;
+    list-style-position: outside;
+    list-style-type: disc;
+}
+
+.etch-kitchen img {
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+.etch-gallery {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.etch-gallery img {
+    width: 100%;
+}
+
+.decca-kitchen {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.decca-kitchen h4 {
+    font-weight: 400;
+    margin-bottom: 35px;
+    font-size: 1.5rem;
+}
+
+.decca-kitchen-text li:nth-child(1),
+.decca-kitchen-text li:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.decca-kitchen ul {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+    padding-left: 10px;
+    list-style-position: outside;
+    list-style-type: disc;
+}
+
+.decca-kitchen img {
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+.decca-gallery {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.decca-gallery img {
+    width: 100%;
+}
+
+.cook-button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.cook-button button {
+    width: 150px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #333;
+    color: #333;
+    padding: 10px 20px;
+    outline: none;
+    transition: 0.2s;
+    cursor: pointer;
+    margin: 50px 0;
+}
+
+.cook-button button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Sleep */
+
+.sleep-heading h1 {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    color: #333;
+}
+
+#sleep-hr {
+    width: 40%;
+    margin: 0 30%;
+    margin-bottom: 100px;
+}
+
+.signal-sleep-gallery {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.signal-sleep-gallery img {
+    width: 100%;
+}
+
+/* View by Use */
+
+.view-by-use {
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.view-by-use img {
+    width: 100%;
+}
+
+.view-cook,
+.view-bathe,
+.view-sleep,
+.view-live {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-cook a:nth-child(2),
+.view-bathe a:nth-child(2),
+.view-sleep a:nth-child(2),
+.view-live a:nth-child(2) {
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    opacity: 0;
+}
+
+.view-cook:hover a:nth-child(2),
+.view-bathe:hover a:nth-child(2),
+.view-sleep:hover a:nth-child(2),
+.view-live:hover a:nth-child(2) {
+    opacity: 1;
+}
+
+.view-cook:hover img,
+.view-bathe:hover img,
+.view-sleep:hover img,
+.view-live:hover img {
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+}
+
+.view-cook a,
+.view-bathe a,
+.view-sleep a,
+.view-live a {
+    max-width: 100%;
+}
+
+/* Decca Radar */
+
+.decca-header {
+    width: 90%;
+    margin: 0 5%;
+    margin-top: 50px;
+}
+
+/* Decca Lightbox  */
+
+.row {
+    display: flex;
+    width: 90%;
+    margin: 0 5%;
+    margin-top: 100px;
+}
+
+.column img {
+    max-width: 100%;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.row > .column {
+    padding: 0 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Create four equal columns that floats next to eachother */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-height: 100%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  img.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+/* Contact */
+
+.contact-header {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333
+}
+
+.contact-text {
+    width: 90%;
+    margin: 0 5%;
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+}
+
+.contact-information {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.contact {
+    margin-bottom: 50px;
+}
+
+.contact,
+.find-us {
+    color: #888;
+    line-height: 40px;
+}
+
+.find-us i,
+.contact i {
+    padding-right: 10px;
+}
+
+/* Media */
+
+@media screen and (min-width: 641px) {  
+    .portfolio-sections {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .view-by {
+        display: flex;
+        justify-content: center;
+    }
+
+    #use {
+        margin-left: 25px;
+        margin-right: 5px;
+        -webkit-filter: brightness(100%);
+    }
+
+    #project {
+        margin-right: 25px;
+        margin-left: 5px;
+        -webkit-filter: brightness(100%);
+    }
+
+    .what-we-do-paragraphs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 50px;
+    }
+
+    .services-testimonial p,
+    .services-testimonial h6 {
+        font-size: 1.5rem;
+        line-height: 45px;
+    }
+
+    /* Cook */
+
+    .cook-button button {
+        margin-bottom: 200px;
+    }
+
+    .signal-kitchen {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .signal-kitchen-text {
+        grid-column-start: 1;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .signal-kitchen img {
+        grid-column-start: 2;
+    }
+
+    .signal-gallery {
+        width: 90%;
+        margin: 0 5%;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-column-gap: 5px;
+    }
+
+    .signal-gallery-1 {
+        background-image: url(imgs/signal-gallery-1.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .signal-gallery img:nth-child(1) {
+        width: 100%;
+        object-fit: cover;
+        max-height: 100%;
+    }
+
+    .signal-gallery img:nth-child(1) {
+        margin-bottom: 5px;
+    }
+
+    .signal-gallery-column img:nth-child(1),
+    .signal-gallery img:nth-child(2) {
+        width: 100%;
+    }
+
+    .signal-gallery-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .etch-kitchen {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .etch-kitchen-text {
+        grid-column-start: 1;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .etch-kitchen img {
+        grid-column-start: 2;
+    }
+
+    .etch-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        margin: 0 5%;
+        grid-column-gap: 5px;
+    }
+
+    .etch-gallery img {
+        width: 100%;
+    }
+
+    .decca-kitchen {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .decca-kitchen-text {
+        grid-column-start: 1;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .decca-kitchen img {
+        grid-column-start: 2;
+    }
+
+    .decca-gallery {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .decca-gallery img {
+        width: 100%;
+    }
+
+    /* Sleep */
+
+    .signal-sleep-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        margin: 0 5%;
+        grid-column-gap: 5px;
+    }
+
+    .signal-sleep-gallery img {
+        width: 100%;
+    }
+
+    /* View by Use */
+
+    .view-by-use {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    /* The Decca Radar House */
+
+    .decca-header {
+        width: 50%;
+        margin-right: 35%;
+        margin-left: 15%;
+        margin-top: 150px;
+    }
+
+    .decca-header h2 {
+        font-size: 3rem;
+        margin-bottom: 50px;
+    }
+
+    .decca-header p {
+        line-height: 30px;
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+
+    .fixed-decca {
+        width: 100%;
+        height: 80vh;
+        background-image: url(/imgs/fixed-decca.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    /* Etch */
+
+    .fixed-etch {
+        width: 100%;
+        height: 80vh;
+        background-image: url(/imgs/etch-fixed.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    /* Signal */
+
+    .fixed-signal {
+        width: 100%;
+        height: 80vh;
+        background-image: url(/imgs/fixed-signal.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    /* Contact */
+
+    .contact-text {
+        width: 60%;
+        margin: 0 20%;
+        text-align: center;
+        margin-top: 50px;
+        color: #333;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    /* Navbar */
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+        background-image: none;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .nav-links,
+    .logo {
+        color: #fff;
+    }
+
+    .nav-links:hover {
+        color: #fff;
+        border-bottom: 2px #fff solid;
+        transition: 0s;
+    }
+
+    /* Landing */
+
+    .landing-text {
+        font-size: 34px;
+    }
+
+    /* Portfolio */
+
+    .portfolio-sections {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .portfolio-column-1 {
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 1;
+    }
+    
+    .portfolio-column-2 {
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 2;
+    }
+    
+    .portfolio-column-3 {
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 3;
+    }
+    
+    .portfolio-column-4 {
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 4;
+    }
+
+    /* Services */
+
+    .what-we-do {
+        width: 70%;
+        margin: 0 15%;
+    }
+
+    .services-testimonial p,
+    .services-testimonial h6 {
+        width: 50%;
+        margin-left: 10%;
+        margin-right: 40%;
+    }
+
+    .what-we-do h2 {
+        font-size: 4rem;
+    }
+
+    .services-grid {
+        width: 60%;
+        margin: 0 20%;
+    }
+
+    /* About */
+
+    .about-1 h1 {
+        margin-top: 150px;
+    }
+
+    .about-1 h6 {
+        width: 60%;
+        margin: 0 20%;
+    }
+
+    .about-grid {
+        width: 80%;
+        margin: 0 10%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .about-grid h2 {
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    .about-grid p {
+        line-height: 20px;
+    }
+
+    .about-grid-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5%;
+    }
+
+    .about-grid-2 h2 {
+        margin-bottom: 15px;
+    }
+
+    .about-grid-3 {
+        grid-row-start: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 5%;
+        text-align: right;
+    }
+
+    .about-grid-4 {
+        grid-column-start: 2;
+    }
+
+    .about-grid-6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5%;
+        text-align: left;
+    }
+
+    .about-grid-7 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 5%;
+        text-align: right;
+    }
+
+    .about-grid-8 {
+        grid-column-start: 2;
+        grid-row-start: 4;
+    }
+
+    .about-1 button {
+        margin-top: 160px;
+    }
+
+    #grid-hr {
+        margin-bottom: 150px;
+    }
+
+    .core-values {
+        width: 70%;
+        margin: 0 15%;
+        margin-bottom: 150px;
+    }
+}
